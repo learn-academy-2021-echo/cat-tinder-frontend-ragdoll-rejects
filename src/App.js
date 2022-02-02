@@ -15,8 +15,14 @@ import {
 import cats from './mockCats'
 
 class App extends Component{
+  constructor(props) {
+    super(props)
+    this.state = {
+      cats: cats
+    }
+  }
   render(){
-    console.log(cats);
+    console.log(this.state.cats);
     return(
       <Router>
         <Header/>
