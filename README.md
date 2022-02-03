@@ -68,3 +68,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Created react app
+-cd Desktop
+-yarn create react-app cat-tinder
+-yarn start
+-created branch, made commit and pushed to the branch.
+
+Front End Structure
+-cd cat-tinder-frontend
+-atom .
+-yarn add bootstrap
+-yarn add reactstrap
+-yarn add react-router-dom@5.3.0
+-git branch
+-git checkout -b frontend-structure
+-git branch
+-git status
+-git add .
+-git commit -m "frontend structure"
+-git push origin frontend-structure
+-git status
+-git add .
+-git commit -m "fix changes"
+-git push origin frontend-structure
+
+Added testing to application
+-  cd cat-tinder-frontend-ragdoll-rejects
+-  yarn
+// received the error "env: node: No such file or directory"
+-  brew install node
+// updated the environment.
+-  yarn add -D enzyme react-test-renderer enzyme-adapter-react-16
+-  yarn test

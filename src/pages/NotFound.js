@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
-
- class NotFound extends Component {
+import React, { Component } from "react";
+import awwrats from "../assets/awwrats.png";
+class NotFound extends Component {
   render() {
     return (
-      <>
-        <h1>Locked out? Climb wall. 404 </h1>
-      </>
-      )
+      <div id="notFound404">
+        <h3>Awww RATS!! No Cats here!</h3>
+        <img src={awwrats} alt="rats are not cats!" className="cat-frienemy" />
+      </div>
+    );
   }
 }
-export default NotFound
+export default NotFound;
+
+//revisit to add styling
+// add 404 image
