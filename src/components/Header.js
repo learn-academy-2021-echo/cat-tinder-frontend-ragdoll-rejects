@@ -12,7 +12,6 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-// import catLogo from '../assets/cat-logo.png'
 
 class Header extends React.Component {
   constructor(props) {
@@ -32,15 +31,15 @@ class Header extends React.Component {
     return (
       <div className="light-blue">
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/"><h1>Cat Tinder</h1></NavbarBrand>
-          {/* <img src={catLogo} alt="" height="50px"/> */}
+          <NavbarBrand href="/">
+            <h1>Cat Tinder</h1>
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/components/">My Profile</NavLink>
               </NavItem>
-
               <NavItem>
                 <NavLink href="https://github.com/learn-academy-2021-echo/cat-tinder-ragdoll-rejects">
                   GitHub

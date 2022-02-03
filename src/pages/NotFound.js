@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import awwrats from '../components/assets/awwrats.png';
+import awwrats from "../components/assets/awwrats.png";
 class NotFound extends Component {
   render() {
     return (

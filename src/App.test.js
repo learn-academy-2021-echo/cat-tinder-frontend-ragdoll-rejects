@@ -24,9 +24,7 @@ describe("When the App renders",() => {
     //Act
     const renderedHomeRoute = renderedApp.find('[path="/"]')
    
-    console.log("rendered Home Debug", renderedHomeRoute.debug());
-    console.log("rendered Home Props", renderedHomeRoute.props());
-    //Assert
+        //Assert
     expect(renderedHomeRoute.length).toEqual(1)
     expect(renderedHomeRoute.props().component).toEqual(Home)
   })
