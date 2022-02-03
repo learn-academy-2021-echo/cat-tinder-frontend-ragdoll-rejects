@@ -32,7 +32,7 @@ class Header extends React.Component {
     return (
       <div className="light-blue">
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Cat Tinder</NavbarBrand>
+          <NavbarBrand href="/"><h1>Cat Tinder</h1></NavbarBrand>
           {/* <img src={catLogo} alt="" height="50px"/> */}
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

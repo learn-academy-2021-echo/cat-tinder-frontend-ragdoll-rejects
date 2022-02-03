@@ -7,7 +7,7 @@ import NotFound from './NotFound'
 Enzyme.configure({ adapter: new Adapter() })
 
 describe("When NotFound Loads...",() => {
-  it("displays a not dound cat image", () => {
+  it("displays a not found cat image", () => {
     const notFound = shallow(<NotFound/>)
     const imgWrapper = notFound.find("img")
     expect(imgWrapper.length).toEqual(1)

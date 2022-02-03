@@ -12,7 +12,7 @@ describe("When Home Loads...",() => {
     console.log(imgWrapper.props());
     expect(imgWrapper.length).toEqual(1)
     expect(imgWrapper.props().src).toEqual('cuteasscat.png')
-    expect(imgWrapper.props().alt).toEqual('cat outline')
+    expect(imgWrapper.props().alt).toEqual('black cat')
     expect(imgWrapper.props().className).toEqual('cuteasscat')
   })
 })
