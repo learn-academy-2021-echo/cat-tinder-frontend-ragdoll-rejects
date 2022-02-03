@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class CatNew extends Component {
   render() {
@@ -6,7 +6,7 @@ class CatNew extends Component {
       <>
         <h1>Welcome to the club, cat!</h1>
       </>
-      );
+    );
   }
 }
-export default CatNew
+export default CatNew;
