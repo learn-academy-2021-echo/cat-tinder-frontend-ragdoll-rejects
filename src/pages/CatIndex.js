@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { Card, CardTitle, Col } from "reactstrap";
 
 class CatIndex extends Component {
@@ -8,18 +9,18 @@ class CatIndex extends Component {
         <h1>We got all the cats right here 🙀</h1>
         <h3>Meet the Cats!</h3>
         <br />
-        <Col sm="6">
-          {this.props.cats.map((cat) => {
-            return (
-              <Card body key={cat.id}>
-                <CardTitle>
-                  <h4>{cat.name}</h4>
-                </CardTitle>
-              </Card>
-            );
-          })}
-        </Col>
-      </>
+          {typeof this.props.cats !== "undefined" ? (
+            this.props.cats.map((cat) => {
+              return (
+                <NavLink to={`/catshow/${cat.id}`} key={cat.id}>
+                  <p>{cat.name}</p>
+                </NavLink>
+              );
+            })
+         ):(
+           <p>Cat not find it.</p>
+         )}
+     </>
     );
   }
 }
