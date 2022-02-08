@@ -13,25 +13,25 @@ class CatNew extends Component {
   constructor(props){
     super(props)
     this.state = {
-     newKitten: {
+     newCat: {
       name: "",
       age: "",
       enjoys:"",
-      img: ""
+      image: ""
      },
      submitted: false
     }
   }
 
   handleChange = (e) => {
-    let { newKitten } = this.state
+    let { newCat } = this.state
     // console.log(e.target.value)
-    newKitten[e.target.name] = e.target.value
-    this.setState({newKitten: newKitten})
+    newCat[e.target.name] = e.target.value
+    this.setState({newCat: newCat})
   }
 
   handleSubmit = () => {
-    this.props.createCat(this.state.newKitten)
+    this.props.createCat(this.state.newCat)
     this.setState({submitted: true})
   }
 
@@ -84,7 +84,7 @@ class CatNew extends Component {
               onChange={this.handleChange}
             />
           </FormGroup>
-          <Button onClick={this.handleSubmit} name='submit'> Add a New Kitty</Button>
+          <Button onClick={this.handleSubmit} name='submit' type="submit"> Add a New Kitty</Button>
         </Form>
         {this.state.submitted && <Redirect to='/catindex'/>}
 

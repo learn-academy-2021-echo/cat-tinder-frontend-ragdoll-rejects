@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Card, CardTitle, Col, CardText, Button, NavLink } from "reactstrap";
 
 class CatShow extends Component {
   render() {
@@ -11,6 +12,11 @@ class CatShow extends Component {
             <p>Kitty oldness: {cat ? cat.age : null}</p>
             <p>Kitty like: {cat ? cat.enjoys : null}</p>
             { cat ? <img src={cat.image} alt="cats are sick" width=" 200px"/> : null}
+            <NavLink to="/catindex">
+              <Button>
+                Delete Kitty Profile
+              </Button>
+            </NavLink>
       </>
     );
   }

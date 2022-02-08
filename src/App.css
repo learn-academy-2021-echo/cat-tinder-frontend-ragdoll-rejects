@@ -1,5 +1,7 @@
 *{
-  background: dodgerblue;
-  color: lightgrey;
+  background: rgb(184, 133, 4);
+  color: rgb(15, 69, 90);
   text-align: center;
+  justify-content: right;
+  align-items: flex-end;
 }
